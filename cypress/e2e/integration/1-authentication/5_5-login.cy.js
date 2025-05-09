@@ -12,5 +12,6 @@ describe('Login Page Feature', () => {
     .type('gothru@12345');     
     cy.get('div.login').find('button').contains('Log In').click();
     cy.wait(5000);
+    cy.screenshoot('Login Feature')
   })
 })
